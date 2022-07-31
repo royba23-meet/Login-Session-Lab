@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+
 </head>
 <body>
-<h1>Write your name, age, and a message!</h1>
-<br>
 
-<!-- Create your form here!
- -->
- 
+<form action="/" method="post" style="max-width:500px;margin:auto">
+  <h2>Login</h2>
+  <div class="input-container">
+    <em class="fa fa-book icon"></em>
+    <input class="input-field" type="text" placeholder="Quote" name="quote">
+  </div>
+
+  
+  <div class="input-container">
+    <em class="fa fa-user icon"></em>
+    <input class="input-field" type="text" placeholder="Quote Author" name="username">
+  </div>
+
+
+  <div class="input-container">
+	<em class="fa fa-clock-o icon"></em>
+	<input class="input-field" type="number" placeholder="Author Age" name="age">
+  </div>
+
+  <button type="submit" class="btn">Login</button>
+</form>
+
+<div class="errorDiv" style="max-width:500px;margin:auto;">
+</div>
+
 </body>
 </html>
